@@ -1,6 +1,8 @@
 # App-game
 This app provides a gamified approach to the “buoy location” problem: multiple users can compete using multiple tablets, the layouts are sent off to the cloud where they are evaluated, and the respective scores are then shown online. In two outreach events, over 100 participants ranging from primary schools to parents and visitors from industry participated.
 
+This demo is for app-side. The server-side cannot be used now.
+
 ## Try it
 Just download Heave.apk and install it
 
