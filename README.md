@@ -1,6 +1,5 @@
 # App-game
-This is an Android app. Users can move four icons by sliding their fingers on the screen. 
-There are four energy-absorbers in the ocean. Researchers need to find the best locations of these four energy-absorbers to make them capture maximum energy. This app simulate this experiment.
+This app provides a gamified approach to the “buoy location” problem: multiple users can compete using multiple tablets, the layouts are sent off to the cloud where they are evaluated, and the respective scores are then shown online. In two outreach events, over 100 participants ranging from primary schools to parents and visitors from industry participated.
 
 ## Try it
 Just download Heave.apk and install it

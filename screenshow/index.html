@@ -1,0 +1,200 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/lmy.css">
+    <style type="text/css">
+    .area-header {
+        width: 58%;
+        height: 100%;
+        float: left;
+        border-color: rgb(0, 0, 0);
+        border-style: dashed;
+        border-width: thin;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="area" class="area-header">
+        <img src="img/Capture.JPG" style="width: 100px;z-index: -999;" />
+    </div>
+    <div style="width: 40%; height:100%; float:right; ">
+        <div class="wholelist">
+            <div class="width265">
+                <ul>
+                    <!--AI-->
+                    <li class="myli">
+                        <span class="rankspan rankafter" id="rank0">AI</span>
+                        <span class="username fontsize" id="name0">AI
+	                            </span>
+                        <span class="energy fontsize" id="power0">1982352
+	                            </span>
+                    </li>
+                    <!--1-->
+                    <li class="myli">
+                        <span class="rankspan rankafter" id="rank1">1</span>
+                        <span class="username fontsize" id="name1">
+	                            </span>
+                        <span class="energy fontsize" id="power1">
+	                            </span>
+                    </li>
+                    <!--2-->
+                    <li class="myli">
+                        <span class="rankspan rankafter" id="rank2">2</span>
+                        <span class="username fontsize" id="name2">
+	                                    
+	                            </span>
+                        <span class="energy fontsize" id="power2">
+	                                
+	                            </span>
+                    </li>
+                    <!--3-->
+                    <li class="myli">
+                        <span class="rankspan rankafter" id="rank3">3</span>
+                        <span class="username fontsize" id="name3">
+	                                    
+	                            </span>
+                        <span class="energy fontsize" id="power3">
+	                                
+	                            </span>
+                    </li>
+                    <!--4-->
+                    <li class="myli">
+                        <span class="rankspan rankafter" id="rank4">4</span>
+                        <span class="username fontsize" id="name4">
+	                                
+	                        </span>
+                        <span class="energy fontsize" id="power4">
+	                            
+	                        </span>
+                    </li>
+                    <!--5-->
+                    <li class="myli">
+                        <span class="rankspan rankafter" id="rank5">5</span>
+                        <span class="username fontsize" id="name5">
+	                                
+	                        </span>
+                        <span class="energy fontsize" id="power5">
+	                            
+	                        </span>
+                    </li>
+                    <!--6-->
+                    <li class="myli">
+                        <span class="rankspan rankafter" id="rank6" style="width: 70px;">Worst</span>
+                        <span class="username fontsize" id="name6">
+	                                
+	                        </span>
+                        <span class="energy fontsize" id="power6">
+	                            1437212
+	                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.js"></script>
+    <script type="text/javascript" src="js/lmy.js"></script>
+    <script>
+    var jiu = 2.473498; // 2.75618
+    var AIC = new Array();
+    for (var i = 0; i < 6; i++) {
+        AIC[i] = new Array();
+        AIC[i][0] = 50 * jiu;
+        AIC[i][1] = 4 * jiu;
+        AIC[i][2] = 9 * jiu;
+        AIC[i][3] = 74 * jiu;
+        AIC[i][4] = 155 * jiu;
+        AIC[i][5] = 188 * jiu;
+        AIC[i][6] = 201 * jiu;
+        AIC[i][7] = 269 * jiu;
+    }
+
+    AIC[6] = new Array();
+    AIC[6][0] = 55 * jiu;
+    AIC[6][1] = 107 * jiu;
+    AIC[6][2] = 104 * jiu;
+    AIC[6][3] = 118 * jiu;
+    AIC[6][4] = 150 * jiu;
+    AIC[6][5] = 145 * jiu;
+    AIC[6][6] = 208 * jiu;
+    AIC[6][7] = 153 * jiu;
+
+    refresh();
+    setInterval("refresh()", '5000');
+
+
+    var max_x, max_y;
+
+    function r(a, b) {
+        return a > b ? 0 : Math.round(Math.random() * (b - a) + a);
+    }
+    var buoyID = new Array();
+    buoyID[0] = "#0";
+    buoyID[1] = "#1";
+    buoyID[2] = "#2";
+    buoyID[3] = "#3";
+
+
+    // AIC = transfer(AIC);
+    var count = 0;
+    var beforeCount = count;
+    // 开始动画
+    function startMove() {
+
+        for (var id = 0; id < 4; id++) {
+            $(buoyID[id]).not(':animated').each(function() {
+                if (id == 0) {
+                    document.getElementById('rank' + beforeCount).className = "rankspan rankafter";
+                    document.getElementById('rank' + count).className = "rankspan ranktop";
+                    beforeCount = count;
+                }
+                // get positions
+                var top = new Array();
+                var left = new Array();
+                for (var i = 0; i < 4; i++) {
+                    top[i] = $(buoyID[i]).offset().top;
+                    left[i] = $(buoyID[i]).offset().left;
+                }
+
+                $(this).animate({
+                    'left': AIC[count][id * 2],
+                    'top': AIC[count][id * 2 + 1],
+                }, r(2000, 3000)); // time comsuption
+
+
+            });
+        }
+        // console.log(count);
+        // console.log(AIC.length);
+        count += 1;
+        if (count == 7) {
+            count = 0;
+        }
+
+    }
+
+    // 初始化
+    $(document).ready(function() {
+        max_y = $(document).height();
+        max_x = $('#area').width();
+        for (var i = 0; i < 4; i++) {
+            var t_div = document.createElement("img");
+            t_div.src = "buoy2.png";
+            t_div.width = "60";
+            t_div.height = "60";
+            t_div.id = i;
+            $(t_div).addClass('common').css({
+                'left': r(10, max_x - 100),
+                'top': r(10, max_y - 100),
+                // 'top':700,
+            })
+            $('#area').append(t_div);
+        }
+        // startMove();
+        setInterval("startMove()", '7000');
+    });
+    </script>
+</body>
+
+</html>
