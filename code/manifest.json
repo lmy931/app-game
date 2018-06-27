@@ -1,0 +1,32 @@
+{"id":"H57A9DC52","name":"hwave","version":{"name":"1.0","code":5},"description":"","icons":{"72":"icon.png"},"launch_path":"index.html","developer":{"name":"541629135@qq.com","email":"541629135@qq.com","url":""},"permissions":{"Accelerometer":{"description":"\u8bbf\u95ee\u52a0\u901f\u5ea6\u611f\u5e94\u5668"},"Audio":{"description":"\u8bbf\u95ee\u9ea6\u514b\u98ce"},"Messaging":{"description":"\u77ed\u5f69\u90ae\u4ef6\u63d2\u4ef6"},"Cache":{"description":"\u7ba1\u7406\u5e94\u7528\u7f13\u5b58"},"Camera":{"description":"\u8bbf\u95ee\u6444\u50cf\u5934"},"Console":{"description":"\u8ddf\u8e2a\u8c03\u8bd5\u8f93\u51fa\u65e5\u5fd7"},"Contacts":{"description":"\u8bbf\u95ee\u7cfb\u7edf\u8054\u7cfb\u4eba\u4fe1\u606f"},"Device":{"description":"\u8bbf\u95ee\u8bbe\u5907\u4fe1\u606f"},"Downloader":{"description":"\u6587\u4ef6\u4e0b\u8f7d\u7ba1\u7406"},"Events":{"description":"\u5e94\u7528\u6269\u5c55\u4e8b\u4ef6"},"File":{"description":"\u8bbf\u95ee\u672c\u5730\u6587\u4ef6\u7cfb\u7edf"},"Gallery":{"description":"\u8bbf\u95ee\u7cfb\u7edf\u76f8\u518c"},"Geolocation":{"description":"\u8bbf\u95ee\u4f4d\u7f6e\u4fe1\u606f"},"Invocation":{"description":"\u4f7f\u7528Native.js\u80fd\u529b"},"Orientation":{"description":"\u8bbf\u95ee\u65b9\u5411\u611f\u5e94\u5668"},"Proximity":{"description":"\u8bbf\u95ee\u8ddd\u79bb\u611f\u5e94\u5668"},"Storage":{"description":"\u7ba1\u7406\u5e94\u7528\u672c\u5730\u6570\u636e"},"Uploader":{"description":"\u7ba1\u7406\u6587\u4ef6\u4e0a\u4f20\u4efb\u52a1"},"Runtime":{"description":"\u8bbf\u95ee\u8fd0\u884c\u671f\u73af\u5883"},"XMLHttpRequest":{"description":"\u8de8\u57df\u7f51\u7edc\u8bbf\u95ee"},"Zip":{"description":"\u6587\u4ef6\u538b\u7f29\u4e0e\u89e3\u538b\u7f29"},"Barcode":{"description":"\u7ba1\u7406\u4e8c\u7ef4\u7801\u626b\u63cf\u63d2\u4ef6"},"Maps":{"description":"\u7ba1\u7406\u5730\u56fe\u63d2\u4ef6"},"Speech":{"description":"\u7ba1\u7406\u8bed\u97f3\u8bc6\u522b\u63d2\u4ef6"},"Webview":{"description":"\u7a97\u53e3\u7ba1\u7406"},"NativeUI":{"description":"\u539f\u751fUI\u63a7\u4ef6"},"Navigator":{"description":"\u6d4f\u89c8\u5668\u4fe1\u606f"},"NativeObj":{"description":"\u539f\u751f\u5bf9\u8c61"}},"plus":{"distribute":{"icons":{"android":{"hdpi":"unpackage/res/icons/72x72.png","mdpi":"unpackage/res/icons/48x48.png","ldpi":"unpackage/res/icons/48x48.png","xhdpi":"unpackage/res/icons/96x96.png","xxhdpi":"unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"},"ios":{"iphone":{"app@2x":"unpackage/res/icons/120x120.png","app@3x":"unpackage/res/icons/180x180.png","settings@3x":"unpackage/res/icons/87x87.png","settings@2x":"unpackage/res/icons/58x58.png","spotlight@2x":"unpackage/res/icons/80x80.png","spotlight@3x":"unpackage/res/icons/120x120.png","notification@3x":"unpackage/res/icons/60x60.png","notification@2x":"unpackage/res/icons/40x40.png"},"ipad":{"app":"unpackage/res/icons/76x76.png","app@2x":"unpackage/res/icons/152x152.png","settings":"unpackage/res/icons/29x29.png","proapp@2x":"unpackage/res/icons/167x167.png","spotlight":"unpackage/res/icons/40x40.png","settings@2x":"unpackage/res/icons/58x58.png","spotlight@2x":"unpackage/res/icons/80x80.png","notification":"unpackage/res/icons/20x20.png","notification@2x":"unpackage/res/icons/40x40.png"},"appstore":"unpackage/res/icons/1024x1024.png"}},"splashscreen":{"android":{"hdpi":"/Users/mengyuli/Desktop/p1.png"}}},"splashscreen":{"autoclose":true,"waiting":true},"popGesture":"close","runmode":"normal","signature":"Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==","statusbar":[]},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [],
+				"refer": [
+					"buoy.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"wave/wave.css",
+				"img/icon/mybuoy.png",
+				"wave/wave.js",
+				"img/icon/buoy2.png",
+				"wave/jquery.ripples.js",
+				"wave/jquery.min.js",
+				"js/login.js",
+				"img/bg.jpg",
+				"js/sdk.js",
+				"css/screen.css",
+				"js/animation.js",
+				"js/toast.js",
+				"js/mui.min.js",
+				"css/mui.min.css",
+				"js/jquery-3.2.1.js",
+				"img/bg2.jpg"
+			]
+		}
+	}}

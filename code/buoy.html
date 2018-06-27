@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="css/screen.css" rel="stylesheet" />
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="wave/wave.css" rel="stylesheet" />
+    <style>
+
+    </style>
+</head>
+
+<body style="margin-top: 0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;
+		width: 100%;height: 100%;position: fixed; ">
+		
+    <div class="panel">
+  
+        <p id="name" class="name"> </p>
+        <br />
+        <br />
+        <br />
+        <div class="power">
+            <h3 id="power">Power: 0</h3>
+        </div>
+        <br />
+        <br />
+        <div class="history-div">
+            <div id="htag" style="display: none;">
+                History Data
+            </div>
+            <br />
+            <div id="history" class="history">
+            </div>
+        </div>
+    </div>
+    <div class="area" style="">
+        <!--<div class="area-tag"><p class="p-tag">Ocean</p></div>-->
+        <div id="0" class="buoy">
+            <img id="simple-menu" src="img/icon/buoy2.png" class="buoy-image" />
+        </div>
+        <div id="1" class="buoy">
+            <img id="simple-menu" src="img/icon/buoy2.png" class="buoy-image" />
+        </div>
+        <div id="2" class="buoy">
+            <img id="simple-menu" src="img/icon/buoy2.png" class="buoy-image" />
+        </div>
+        <div id="3" class="buoy">
+            <img id="simple-menu" src="img/icon/buoy2.png" class="buoy-image" />
+        </div>
+    </div>
+    <script src="wave/jquery.min.js"></script>
+    <script src="wave/jquery.ripples.js"></script>
+    <script src="wave/wave.js"></script>
+    <!--<script src="js/jquery-3.2.1.js"></script>-->
+    <script src="js/animation.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script>
+    mui.plusReady(function() {
+        plus.screen.lockOrientation("landscape-primary");
+    })
+    </script>
+    <!--share-->
+
+<!--share-->
+</body>
+
+</html>

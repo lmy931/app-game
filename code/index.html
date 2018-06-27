@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/screen.css">
+		<link rel="stylesheet" type="text/css" href="css/app.css" /> 
+		<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+
+	</head>
+
+	<body style="background-color: #ffffff;">
+	
+
+		<div class="mui-content" style="background-color: #ffffff;">
+			<center>
+				<div class="mui-content-padded"style="width: 500px;margin-top: 60px;">
+					<br><br>
+	
+					<form class="mui-input-group">
+						<div class="mui-input-row">
+							<label>Name</label>
+							<input type="text" id="usern" placeholder="please input your name">
+						</div>
+						
+						<div class="mui-button-row" style="padding-top: 40px;">
+							<button id="submit" type="button" class="mui-btn mui-btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	
+						</div>
+					</form>
+				</div>
+			</center>
+		</div>
+		<div class="instruction">
+			<p>
+				<br /> <b>Step1</b>: Enter your name and press the enter button.
+<br /><b>Step2</b>: Drag the buoys with your fingers.
+<br /><b>Step3</b>: Get the result
+</p>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script>
+			mui.plusReady(function(){
+				plus.screen.lockOrientation("landscape-primary");
+				// button
+	            document.getElementById("submit").addEventListener('tap', function() {
+					readyJump();
+	            })
+			})
+	      // huiche
+	      	document.querySelector("form").addEventListener("submit",function(e){
+			    e.preventDefault();
+			    readyJump();
+			});
+	        function readyJump(){
+//	        	$("input").blur();
+//	        	document.activeElement.blur();
+//				setTimeout("jump()",500);
+				jump();
+	        }
+	        function jump(){
+				 window.location.href="buoy.html?ko="+document.getElementById('usern').value;
+			}
+		</script>
+	</body>
+
+</html>
